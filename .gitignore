@@ -1,0 +1,20 @@
+# Created by https://www.gitignore.io/api/code,racket
+
+### Code ###
+# Visual Studio Code - https://code.visualstudio.com/
+.settings/
+.vscode/
+tsconfig.json
+jsconfig.json
+
+### Racket ###
+*.rkt~
+*.rkt.bak
+\#*.rkt#
+\#*.rkt#*#
+*.dep
+*.zo
+
+compiled
+
+# End of https://www.gitignore.io/api/code,racket
