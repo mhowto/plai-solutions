@@ -44,13 +44,7 @@
                                                                   b))))))))
       "1")
 
-;(test (get-result-string (interpret (desugar (parse '(let b (box dummy)
-;                                                       (seq (setbox b b)
-;                                                            b))))))
-;      "b")
-
-(test (get-result-string (interpret (desugar (parse empty-list-s-exp)))) empty-list-str)
-(test (get-result-string (interpret (desugar (parse list-s-exp)))) list-str)
-(test (get-result-string (interpret (desugar (parse cons-list-s-exp)))) cons-list-str)
-
-(test (get-result-string (interpret (desugar (parse tree-s-exp)))) tree-str)
+(test (get-result-string (interpret (desugar (parse '(let b (box dummy)
+                                                       (seq (setbox b b)
+                                                            b))))))
+      "b")

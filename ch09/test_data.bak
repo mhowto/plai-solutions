@@ -73,21 +73,3 @@
 (define app-exprs (appS (lamS 'x (plusS (numS 1) (idS 'x))) (numS 2)))
 (define app-exprc (appC (lamC 'x (plusC (numC 1) (idC 'x))) (numC 2)))
 (define app-str "3")
-
-(define empty-list-s-exp `nil)
-(define empty-list-exprs nilS)
-(define empty-list-exprc nilC)
-(define empty-list-str "nil")
-
-(define list-s-exp '(cons 2 nil))
-(define list-exprs (consS (numS 2) (nilS)))
-(define list-exprc (consC (numC 2) (nilC)))
-(define list-str "list (2) (nil)")
-
-(define cons-list-s-exp '(cons (cons 1 2) (cons 4 nil)))
-(define cons-list-exprs (consS (consS (numS 1) (numS 2)) (consS (numS 4) (nilS))))
-(define cons-list-exprc (consC (consC (numC 1) (numC 2)) (consC (numC 4) (nilC))))
-(define cons-list-str "list (list (1) (2)) (list (4) (nil))")
-
-(define tree-s-exp '(node 3 (node 4 nil (node 5 nil nil)) (node 1 nil nil)))
-(define tree-str "tree (val = 3, left = tree (val = 4, left = nil, right = tree (val = 5, left = nil, right = nil)), right = tree (val = 1, left = nil, right = nil))")
